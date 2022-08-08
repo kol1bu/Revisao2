@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Revisao</string>
+    <string name="txtNome">Nome</string>
+    <string name="txtEndereco">Endereço</string>
+    <string name="txtBairro">Bairro</string>
+    <string name="txtCep">CEP</string>
+    <string name="txtCidade">Cidade</string>
+    <string name="btnCadastrar">Cadastrar</string>
+    <string name="btnVoltar">Voltar</string>
+    <string name="txtResultado">Resultado</string>
+</resources>
