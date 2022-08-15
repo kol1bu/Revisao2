@@ -12,10 +12,22 @@ class Resultado : AppCompatActivity() {
         setContentView(R.layout.activity_resultado)
 
         val edtResultado: EditText = findViewById(R.id.edtResultado)
+        val edtEndereco: EditText = findViewById(R.id.edtEnderecores)
+        val edtBairro: EditText = findViewById(R.id.edtBairrores)
+        val edtCep: EditText = findViewById(R.id.edtCepores)
+        val edtCidade: EditText = findViewById(R.id.edtCidaderes)
         val intent = intent
         val inputNome = intent.getStringExtra("nome")
+        val inputEndereco = intent.getStringExtra("endereco")
+        val inputBairro = intent.getStringExtra("bairro")
+        val inputCep = intent.getStringExtra("cep")
+        val inputCidade = intent.getStringExtra("cidade")
 
         edtResultado.setText("Nome: " + inputNome.toString())
+        edtEndereco.setText("Endereço: " + inputEndereco.toString())
+        edtBairro.setText("Bairro: " + inputBairro.toString())
+        edtCep.setText("CEP: " + inputCep.toString())
+        edtCidade.setText("Cidade: " + inputCidade.toString())
 
         val btnVoltar: Button = findViewById(R.id.btnVoltar)
 

@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         val txtCEP:TextView = findViewById(R.id.edtCep)
         val txtCidade:TextView = findViewById(R.id.edtCidade)
         val edtNome: TextView = findViewById(R.id.edtNome)
+        val edtEndereco: TextView = findViewById(R.id.edtEndereco)
+        val edtBairro: TextView = findViewById(R.id.edtBairro)
+        val edtCEP: TextView = findViewById(R.id.edtCep)
+        val edtCidade: TextView = findViewById(R.id.edtCidade)
 
         val btnCadastrar:Button = findViewById(R.id.btnCadastrar)
 
@@ -26,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Resultado::class.java)
 
             intent.putExtra("nome", edtNome.text.toString())
+            intent.putExtra("endereco", edtEndereco.text.toString())
+            intent.putExtra("bairro", edtBairro.text.toString())
+            intent.putExtra("cep", edtCEP.text.toString())
+            intent.putExtra("cidade", edtCidade.text.toString())
             startActivity(intent)
         }
 
